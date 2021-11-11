@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+  
+  <div class="container">
+    <div class="title">
+      <h1>Clothes Shop</h1>
+    </div>
+    <nav>
+      <ul class="left-nav">
+        <li><button class="btn-tab active" data-tab="#man">Men</button></li>
+        <li><button class="btn-tab" data-tab="#woman">Women</button></li>
+      </ul>
+      <ul class="right-nav">
+        <li id="cart"><i class="fas fa-shopping-cart"></i></li>
+        <li id="price">0$</li>
+      </ul>
+    </nav>
+    <div class="clothes">
+      <div class="tab men active-tab" id="man"></div>
+      <div class="tab women" id="woman"></div>
+    </div>
+  </div>
+  <div class="cart-menu">
+    <div class="x-button">
+      <i class="fas fa-times"></i>
+    </div>
+    <button class="confirm">Confirm Purchase</button>
+    <div class="bought-items">
+      
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

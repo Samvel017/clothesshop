@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding: 50px 20px 0 20px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 25px;
+}
+
+.container nav ul li button {
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container nav ul li button.active {
+  border-bottom: 2px solid #083c6e;
+}
+
+.container nav ul li button:hover {
+  border-bottom: 2px solid #083c6e;
+}
+
+.container nav .right-nav {
+  grid-gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #083c6e;
+}
+
+.container nav .right-nav li {
+  font-size: 20px;
+}
+
+.container nav .right-nav li#cart {
+  cursor: pointer;
+}
+
+.container .clothes .tab {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-gap: 25px;
+}
+
+.container .clothes .tab.active-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .clothes .tab .clothes-block {
+  max-width: 250px;
+  -webkit-box-shadow: 2px 2px 5px #ccc;
+          box-shadow: 2px 2px 5px #ccc;
+  border-radius: 20px;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-top {
+  height: 240px;
+  padding: 5px 10px;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-top .clothes-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-top .clothes-img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.container .clothes .tab .clothes-block .clothes-block-top .clothes-size-block {
+  position: absolute;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  background: rgba(248, 209, 209, 0.856);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-top .clothes-size-block .size-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 10px;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-top .clothes-size-block .size-section .size-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: #083c6e;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-top .clothes-size-block .size-section .size-btn:hover {
+  background-color: #eee;
+  color: #083c6e;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px 20px;
+  background-color: #083c6e;
+  border-radius: 0 0 20px 20px;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-bottom .clothes-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-bottom .clothes-brand {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-bottom .clothes-price {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-bottom .clothes-button {
+  padding: 7px 12px;
+  background-color: rgba(255, 255, 255, 0.705);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #083c6e;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.container .clothes .tab .clothes-block .clothes-block-bottom .clothes-button:hover {
+  background-color: #fff;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+
+.title h1 {
+  text-align: center;
+}
+
+.size-show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.active-btn {
+  background-color: #eee !important;
+  color: #083c6e !important;
+}
+
+.cart-menu {
+  position: fixed;
+  overflow-y: auto;
+  z-index: 10000;
+  padding: 20px 20px 20px 15px;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  width: 300px;
+  background-color: rgba(8, 60, 110, 0.85);
+}
+
+.cart-menu .x-button {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  top: 20px;
+  color: #083c6e;
+  right: 20px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.cart-menu .x-button:hover {
+  background-color: #083c6e;
+  color: #fff;
+}
+
+.cart-menu.menu-show {
+  right: 0;
+}
+
+.cart-menu .confirm {
+  padding: 7px 12px;
+  background: #fff;
+  border: 2px solid #083c6e;
+  border-radius: 5px;
+  color: #083c6e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cart-menu .confirm:hover {
+  background-color: #083c6e;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.bought-items {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 20px;
+}
+
+.bought-items .bought-item-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  background-color: rgba(88, 142, 192, 0.6);
+}
+
+.bought-items .bought-item-block .left {
+  width: 50%;
+}
+
+.bought-items .bought-item-block .left img {
+  width: 100%;
+}
+
+.bought-items .bought-item-block .right {
+  color: #fff;
+  font-size: 22px;
+}
+
+.bought-items .bought-item-block .right ul li:nth-child(1) {
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=style.css.map */
