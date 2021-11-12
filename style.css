@@ -222,6 +222,7 @@
 
 .title h1 {
   text-align: center;
+  font-size: 44px;
 }
 
 .size-show {
@@ -331,5 +332,22 @@
 
 .bought-items .bought-item-block .right ul li:nth-child(1) {
   margin-bottom: 15px;
+}
+
+.btn-cancel {
+  padding: 7px 12px;
+  margin-top: 15px;
+  background-color: #d40000;
+  color: white;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */

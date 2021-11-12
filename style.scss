@@ -164,6 +164,7 @@ $col: rgba(8, 60, 110, 1);
   margin-bottom: 50px;
   h1 {
     text-align: center;
+    font-size: 44px;
   }
 }
 
@@ -247,4 +248,18 @@ $col: rgba(8, 60, 110, 1);
 }
 .bought-items .bought-item-block .right ul li:nth-child(1) {
   margin-bottom: 15px;
+}
+.btn-cancel {
+  padding: 7px 12px;
+  margin-top: 15px;
+  background-color: rgb(212, 0, 0);
+  color: white;
+  transition: .3s all;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: red;
+  }
 }
