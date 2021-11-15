@@ -287,9 +287,17 @@ for (let i = 0; i < women.length; i++) {
         <ul>
           <li>Price: $${boughtItem.price}</li>  
           <li>Size: ${boughtItem.size}</li>
+          <button class="btn-cancel">Cancel</button>
         </ul>
       </div>
       `
+      let btnCancel = boughtItemBlock.querySelector('.btn-cancel')
+      console.log(btnCancel)
+      btnCancel.addEventListener('click', ()=>{
+        buyPrice -= women[i].price
+        priceBlock.innerHTML = `<span>${buyPrice}$</span>`;
+        boughtItemBlock.remove()
+      })
       console.log(boughtItem);
       boughtClothes.push(boughtItem);
     } else {
